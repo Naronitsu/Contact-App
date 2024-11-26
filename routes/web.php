@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Models\Contact;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,13 +18,14 @@ Route::get('/', function () {
 });
 
 Route::get('/contacts', function(){
-    return '<h1>All Contacts</h1>';
+    return view("contacts.index");
 })->name('contacts.index');
 
 Route::get('contacts/create',function(){
-    return '<h1>Add Contacts</h1>';
-})->name('contacts.create');;
+    return view("contacts.create");
+})->name('contacts.create');
 
 Route::get('contacts/{id}',function($id){
-    return App\Models\Contact::find($id);
-})->name('contacts.show');;
+    $contact = Contact::find($id);
+    return view('contacts.show', compact('contact'));
+})->name('contacts.show');
