@@ -1,0 +1,15 @@
+[90m= [39m[
+    [34;4mApp\Models\Contact[39;24m {#5136
+      [34mfirst_name[39m: "[32mJ[39m",
+      [34mlast_name[39m: "[32mBor[39m",
+      [34memail[39m: "[32mBor[39m",
+      [34maddress[39m: "[32mBor[39m",
+    },
+    [34;4mApp\Models\Contact[39;24m {#5142
+      [34mfirst_name[39m: "[32md[39m",
+      [34mlast_name[39m: "[32mBor[39m",
+      [34memail[39m: "[32mBor[39m",
+      [34maddress[39m: "[32mBor[39m",
+    },
+  ]
+
